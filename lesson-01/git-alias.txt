@@ -1,11 +1,12 @@
 #command to edit: git config --global --edit
 
+[core]
+	editor = code --wait
 [alias]
+	p = !git push
 	s = !git status -s
 	c = !git add --all && git commit -m
-	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
-	p = !git push
-	
+	l = !git log --pretty=format:'%C(yellow)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
 	
 #command to join new commit into latest commig
 #git commit --amend --no-edit
